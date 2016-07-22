@@ -1,0 +1,15 @@
+{
+  "name": "unix-pipe",
+  "description": "Simulate Unix pipes with pure Node.js",
+  "version": "0.1.0",
+  "private": true,
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "teenytest 'lib/**/*.test.js'"
+  },
+  "author": "Eduardo Lavaque <me@greduan.com> (http://greduan.com)",
+  "license": "ISC",
+  "devDependencies": {
+    "teenytest": "5.0.2"
+  }
+}
