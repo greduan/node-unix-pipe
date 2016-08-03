@@ -17,17 +17,6 @@ $ npm link
 
 ## Usage
 
-### Process definition format
-
-```js
-[
-  {
-    command: 'coffee',
-    options: ['-s', '-p'],
-  },
-]
-```
-
 ### CoffeeScript pipe example
 
 ```js
@@ -50,8 +39,18 @@ var srcFile = fs.createReadStream('/some/path.cs');
 var outFile = fs.createWriteStream('/some/path.js');
 
 // srcFile -> coffee -> outFile
-srcFile.pipe(coffee);
-coffee.pipe(outFile);
+srcFile.pipe(coffee).pipe(outFile);
+```
+
+### Process definition format
+
+```js
+[
+  {
+    command: String, // Unix command name
+    options: Array, // options and other to pass to the command
+  },
+]
 ```
 
 ## License
