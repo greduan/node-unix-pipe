@@ -1,6 +1,6 @@
 {
   "name": "unix-pipe",
-  "description": "Simulate Unix pipes with pure Node.js",
+  "description": "Simulate a Unix process pipeline with pure Node.js",
   "version": "0.1.0",
   "private": true,
   "main": "lib/index.js",
@@ -10,6 +10,9 @@
   "author": "Eduardo Lavaque <me@greduan.com> (http://greduan.com)",
   "license": "ISC",
   "devDependencies": {
-    "teenytest": "5.0.2"
+    "teenytest": "5.x"
+  },
+  "dependencies": {
+    "through2": "2.x"
   }
 }
