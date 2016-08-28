@@ -6,6 +6,23 @@ one to the next one in the definition.
 Returns a Transform Stream to which you pipe in the input you want to pass
 through the processes pipeline and which pipes out the output of the pipeline.
 
+## Current problem I'm solving
+
+If you check the code you'll notice this is still in an unfinished state.
+
+Sadly I've come across a roadblock on what I can do about this.  If you've an
+idea on how to solve this please do open an issue or PR about this :smile:
+
+The part of the process I haven't figured out is marked by an `X`
+[Mermaid flowchart](http://knsv.github.io/mermaid/live_editor/#/view/Z3JhcGggVEQKCnNbc3RyZWFtIGlucHV0XQpmW3N0cmVhbSBvdXRwdXRdCnRbdHJhbnNmb3JtIHN0cmVhbV0KcFtwcm9jZXNzZXMgcGlwZWxpbmVdCgpzIC0tPiB0CnQgLS1YLS0-IHAKcCAtLVgtLT4gdAp0IC0tPiBm)
+
+The reason that's hard to figure out is because the input to the transform
+stream is a block, but the input the transform's gotta pass to the pipeline is a
+stream not a block.  Look at the code and you'll see what I mean.
+
+If you are actually interested in helping me out with this one let me know so I
+can provide all the info you need, in case you are able to solve it  :smiley:
+
 ## Installation
 
 ```
